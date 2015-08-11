@@ -206,7 +206,6 @@ static CGFloat WIDTG = 50;
 
 static NSString * START_AD_MODEL = @"START_AD_MODEL";
 static NSString * START_IMG_DIC = @"START_IMG_DIC";
-
 static NSString * IMG_EXIST = @"IMG_EXIST";
 
 
@@ -259,8 +258,8 @@ static HHStartAD * _startAD;
 - (void)requestAD
 {
     //建议该字典从服务器获取，由于我不会服务器，所以先这样弄着吧
-    NSMutableDictionary * dic = [NSMutableDictionary dictionaryWithDictionary:@{@"adid":@(1515),                        //广告id
-                                                                                @"duration":@(5),                       //持续时间
+    NSMutableDictionary * dic = [NSMutableDictionary dictionaryWithDictionary:@{@"adid":@(1523),                        //广告id
+                                                                                @"duration":@(4),                       //持续时间
                                                                                 @"start_date":@"2015-8-9 00:00",        //有效开始时间
                                                                                 @"end_date":@"2015-8-13 00:00",         //有效结束时间
                                                                                 @"imgurl":@"http://7xkzrw.com1.z0.glb.clouddn.com/prologue_2@2x.jpg",                 //图片地址，有prologue_0、prologue_1、prologue_2
@@ -271,7 +270,7 @@ static HHStartAD * _startAD;
     
     
     //如果获得的adid一样，说明广告不需要更新
-    if(self.model.adid == [dic[@"adid"] integerValue]){
+    if(self.model.adid == [dic[@"adid"] integerValue] && 1 == [dic[@"available"] integerValue]){
         return;
     }
     
@@ -383,8 +382,6 @@ static HHStartAD * _startAD;
                 ws.touchADModelBlock(ws.model);
             }
         };
-        
-        
     }
     return _adView;
 }
