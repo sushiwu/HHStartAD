@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		465C8CDEAEA10275134CDCD7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9F059F54D2CEB6B65F531EE /* libPods.a */; };
 		8826AFB71B79A1CF006C9127 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8826AFB61B79A1CF006C9127 /* main.m */; };
 		8826AFBA1B79A1CF006C9127 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8826AFB91B79A1CF006C9127 /* AppDelegate.m */; };
 		8826AFBD1B79A1CF006C9127 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8826AFBC1B79A1CF006C9127 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		8826AFC21B79A1CF006C9127 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8826AFC11B79A1CF006C9127 /* Images.xcassets */; };
 		8826AFC51B79A1CF006C9127 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8826AFC31B79A1CF006C9127 /* LaunchScreen.xib */; };
 		8826AFD11B79A1D0006C9127 /* HHStartADTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8826AFD01B79A1D0006C9127 /* HHStartADTests.m */; };
+		8826AFE41B79A5BD006C9127 /* HHStartAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8826AFE31B79A5BD006C9127 /* HHStartAD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,11 @@
 		8826AFCA1B79A1D0006C9127 /* HHStartADTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHStartADTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8826AFCF1B79A1D0006C9127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8826AFD01B79A1D0006C9127 /* HHStartADTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHStartADTests.m; sourceTree = "<group>"; };
+		8826AFE21B79A5B2006C9127 /* HHStartAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHStartAD.h; sourceTree = "<group>"; };
+		8826AFE31B79A5BD006C9127 /* HHStartAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHStartAD.m; sourceTree = "<group>"; };
+		B132645FD23349EC04C41327 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D9F059F54D2CEB6B65F531EE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5E418CB2FCBEF38C98B60CD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465C8CDEAEA10275134CDCD7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B1F2184C35CB5FE3A85E72F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B132645FD23349EC04C41327 /* Pods.debug.xcconfig */,
+				F5E418CB2FCBEF38C98B60CD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8826AFA81B79A1CF006C9127 = {
 			isa = PBXGroup;
 			children = (
 				8826AFB31B79A1CF006C9127 /* HHStartAD */,
 				8826AFCD1B79A1D0006C9127 /* HHStartADTests */,
 				8826AFB21B79A1CF006C9127 /* Products */,
+				7B1F2184C35CB5FE3A85E72F /* Pods */,
+				CA7BFE27AAF9CD60B48AC3E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +100,8 @@
 		8826AFB31B79A1CF006C9127 /* HHStartAD */ = {
 			isa = PBXGroup;
 			children = (
+				8826AFE21B79A5B2006C9127 /* HHStartAD.h */,
+				8826AFE31B79A5BD006C9127 /* HHStartAD.m */,
 				8826AFB81B79A1CF006C9127 /* AppDelegate.h */,
 				8826AFB91B79A1CF006C9127 /* AppDelegate.m */,
 				8826AFBB1B79A1CF006C9127 /* ViewController.h */,
@@ -119,6 +140,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CA7BFE27AAF9CD60B48AC3E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9F059F54D2CEB6B65F531EE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8826AFD41B79A1D0006C9127 /* Build configuration list for PBXNativeTarget "HHStartAD" */;
 			buildPhases = (
+				FF143CB8819BABD5F5270BED /* Check Pods Manifest.lock */,
 				8826AFAD1B79A1CF006C9127 /* Sources */,
 				8826AFAE1B79A1CF006C9127 /* Frameworks */,
 				8826AFAF1B79A1CF006C9127 /* Resources */,
+				2C874BFC6F8379BDF21BAFCF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,12 +245,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C874BFC6F8379BDF21BAFCF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF143CB8819BABD5F5270BED /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8826AFAD1B79A1CF006C9127 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8826AFBD1B79A1CF006C9127 /* ViewController.m in Sources */,
+				8826AFE41B79A5BD006C9127 /* HHStartAD.m in Sources */,
 				8826AFBA1B79A1CF006C9127 /* AppDelegate.m in Sources */,
 				8826AFB71B79A1CF006C9127 /* main.m in Sources */,
 			);
@@ -345,6 +410,7 @@
 		};
 		8826AFD51B79A1D0006C9127 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B132645FD23349EC04C41327 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HHStartAD/Info.plist;
@@ -355,6 +421,7 @@
 		};
 		8826AFD61B79A1D0006C9127 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E418CB2FCBEF38C98B60CD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HHStartAD/Info.plist;
@@ -416,6 +483,7 @@
 				8826AFD61B79A1D0006C9127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8826AFD71B79A1D0006C9127 /* Build configuration list for PBXNativeTarget "HHStartADTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +492,7 @@
 				8826AFD91B79A1D0006C9127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

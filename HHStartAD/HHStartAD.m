@@ -9,7 +9,6 @@
 #import "HHStartAD.h"
 #import <AFNetworking.h>
 #import <Masonry.h>
-#import <SDWebImageManager.h>
 
 @implementation HHADModel
 
@@ -314,7 +313,7 @@ static HHStartAD * _startAD;
 //展现广告
 - (void)showAD
 {
-    //[UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    //需要在info.plist文件里面加一个字段：View controller-based status bar appearance 并设置为NO
     [UIApplication sharedApplication].statusBarHidden = YES;
     UIWindow * keyWindow = [UIApplication sharedApplication].keyWindow;
     
